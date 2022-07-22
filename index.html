@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>DevLanguages</title>
+</head>
+<body>
+    
+    <div>
+
+        <h1 id="title">Escolha seu a caminho para Dev</h1>
+        <p id="description">Preencha os campos abaixo para sabermos o que você quer aprender.</p>
+
+        <form id="survey-form">
+            
+            <div class="form-group">
+                <label for="name" id="name-label">Nome</label>
+                <input type="text" id="name" name="name" class="form-control" placeholder="Seu Nome Completo">
+            </div>
+
+            <div class="form-group">
+                <label for="email" id="email-label">Email</label>
+                <input type="email" id="email" name="email" class="form-control" placeholder="Seu email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="number" id="number-label">Idade</label>
+                <input type="age" id="number" name="age" min="10" max="99" class="form-control" placeholder="Digite tua idade">
+            </div>
+            
+            <div class="form-group">
+                <p>Qual a sua disponibilidade de tempo para estudo semanal?</p>
+                <select name="role" class="form-control" id="dropdown">
+                    <option value="full-time">40h/semana</option>
+                    <option value="part-time">20h/semana</option>
+                    <option value="small-time">10h/semana</option>
+                </select>
+            </div>
+            
+            <div class="form-group">
+                <p>Qual é a tua situação atual?</p>
+                <label>
+                    <input type="radio" name="user-recommed" value="desempregado" class="input-radio">
+                    Desempregado
+                </label>
+                <label>
+                    <input type="radio" name="user-recommed" value="trabalho-integral" class="input-radio">
+                    Trabalho integral
+                </label>
+                <label>
+                    <input type="radio" name="user-recommed" value="trabalha-meio" class="input-radio">
+                    Trabalha meio periodo
+                </label>
+            </div>
+            
+            <div class="form-group">
+                <p>Qual seria a tua profissão preferida?</p>
+                <label>
+                    <input type="checkbox" name="prefer" value="front-end" class="input-checkbox">Front-End
+                </label>
+                
+                <label>
+                    <input type="checkbox" name="prefer" value="back-end" class="input-checkbox">Back-End
+                </label>
+
+                <label>
+                    <input type="checkbox" name="prefer" value="full-stack" class="input-checkbox">Full-Stack
+                </label>
+
+                <label>
+                    <input type="checkbox" name="prefer" value="mobile-android" class="input-checkbox">Mobile-Android
+                </label>
+
+                <label>
+                    <input type="checkbox" name="prefer" value="mobile-ios" class="input-checkbox">Mobile-IOS
+                </label>
+            </div>
+            
+            <div class="form-group">
+                <p>Comente se deseja acrescentar alguma informação extra</p>
+                <textarea name="" id="comments" name="comment" placeholder="Digite aqui seu comentario" class="input-textarea"></textarea>
+            </div>
+            
+            <div class="form-group">
+                <button id="submit" class="submit-button"> Submit </button>
+            </div>
+
+        </form>
+    </div>
+
+</body>
+</html>
